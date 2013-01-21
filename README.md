@@ -8,3 +8,8 @@ Install node
     sudo add-apt-repository ppa:chris-lea/node.js
     sudo apt-get update
     sudo apt-get install nodejs npm
+
+Install mongodb
+
+    apt-get install mongodb mongodb-server
+    service mongodb start
