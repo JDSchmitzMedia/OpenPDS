@@ -1,0 +1,29 @@
+{
+	"type": "AnswerCollection",
+	"properties": {
+		"key": {
+			"name": "key",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "key",
+			"order": 0
+		},
+		"value": {
+			"name": "value",
+			"type": "number",
+			"typeLabel": "number",
+			"required": true,
+			"id": "value",
+			"order": 1
+		},
+		"issharing": {
+			"name": "issharing",
+			"type": "boolean",
+			"typeLabel": "boolean",
+			"required": true,
+			"id": "issharing",
+			"order": 2
+		}
+	}
+}

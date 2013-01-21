@@ -1,0 +1,19 @@
+
+Scalpel version 1.60 audit file
+Started at Mon Nov 12 22:21:01 2012
+Command line:
+scalpel /dev/sda1 -o output 
+
+Output directory: /home/jschmitz/code/MIT_Github/App_Server/deployd/openpds/output
+Configuration file: /etc/scalpel/scalpel.conf
+
+Opening target "H="
+
+The following files were carved:
+File		  Start			Chop		Length		Extracted From
+ERROR: The configuration file didn't specify any file types to carve.
+(If you're using the default configuration file, you'll have to
+uncomment some of the file types.)
+
+
+Completed at Mon Nov 12 22:21:01 2012

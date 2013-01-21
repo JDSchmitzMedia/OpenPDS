@@ -1,0 +1,83 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+  <meta name="viewport" content="height=device-height,width=device-width,initial-scale=1.0,maximum-scale=1.0" >
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+  <title>Settings</title> 
+
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+  <link rel="stylesheet" type="text/css" href="simpleDialog2/jquery.mobile.simpledialog.min.css" /> 
+  <link rel="stylesheet" type="text/css" href="./visualizationCSS.css" /> 
+
+  <!-- Modernizer -->
+  <script type="text/javascript" src="./modernizr.custom.56582.js"></script>
+
+  <!-- jQuery/jQuery Mobile -->
+  <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+
+   <!-- simpleDiaglo2 -->
+  <script src="simpleDialog2/jquery.mobile.simpledialog2.min.js"></script>
+
+    <!-- d3.js -->
+  <script src="http://mbostock.github.com/d3/d3.js?2.5.0"></script>
+  
+  <script>   
+
+   // Global declarations - assignments made in $(document).ready() below
+   var permission_l = null;
+
+    function showSimpleDialogue(alertHeader, alertMessage) {
+    
+    $('<div>').simpledialog2({
+                    mode: 'button',
+                    headerText: alertHeader,
+                    buttonPrompt: alertMessage,
+                    headerClose: false,
+                    buttons : {
+                      'OK': {
+                        click: function () { 
+                        }
+                      }
+                    }
+             })
+ }
+
+  </script>
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js"></script>
+  <script src="https://raw.github.com/jonnyreeves/jquery-Mustache/master/src/jquery-Mustache.js"></script>
+  <script src="https://raw.github.com/janl/mustache.js/master/mustache.js"></script>
+
+</head>
+
+<body> 
+<div id="dom-template"></div>
+</body>
+<script>
+var view = {
+  title: "Joe",
+  calc: function () {
+    return 2 + 4;
+  }
+};
+
+var output = Mustache.render("{{title}} spends {{calc}}", view);
+$("body").html(output);
+//var data, template, html;  
+//data = {  
+//    name : "Some Tuts+ Sites",  
+//    sites: ["Nettuts+", "Psdtuts+", "Mobiletuts+"],  
+//    url : function () {  
+//        return function (text, render) {  
+//            text = render(text);  
+//            var url = text.trim().toLowerCase().split('tuts+')[0] + '.tutsplus.com';  
+//            return '<a href="' + url + '">' + text + '</a>';  
+//        }  
+//    }  
+//};  
+//template = "<h1> {{name}} </h1> <ul> {{#sites}} <li> {{#url}} {{.}} {{/url}} </li> {{/sites}}  </ul>";  
+//html = Mustache.to_html(template, data);  
+document.write(html);  
+</script>
+</html>
