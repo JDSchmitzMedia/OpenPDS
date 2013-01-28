@@ -1,5 +1,15 @@
 var deployd = require('deployd')
-  , options = {port: process.argv[2]}
+  , options = {port: process.argv[2],
+		db: {
+			host: 'localhost',
+			port: 27017,
+			name: process.argv[3],
+			credentials:{
+				username: process.argv[3],
+				password: process.argv[3] 
+			}
+		}
+	}
   , server = deployd(options)
   , my_http = require("http");  
 

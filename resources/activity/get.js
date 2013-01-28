@@ -1,10 +1,4 @@
-var apps = {};
-dpd.funf.get({"key":"activity"}, function(results) {
-  console.log(results);
-  apps = results;
-  console.log(apps);
-  //setResult({"test":"object"});
-  
-  setResult(apps);
-
+dpd.funf.get({key: 'location'}, function(results, error) {
+  // Do something
+  setResult(results);
 });
